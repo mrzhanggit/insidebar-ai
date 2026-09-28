@@ -1,700 +1,1150 @@
 [
   {
-    "title": "Refine and Improve a Prompt",
-    "content": "Rewrite the following prompt in clear, natural English and enhance it using AI prompt-writing best practices to ensure more accurate, specific, and useful results.\\n\\n Prompt: {draft}",
-    "category": "Prompt Refinement & Upgrading",
-    "tags": ["refinement", "clarity", "best-practices", "prompt-writing"],
-    "variables": ["draft"],
+    "title": "优化与改进提示词",
+    "content": "请用清晰自然的中文重写以下提示词，并运用 AI 提示词编写的最佳实践加以优化，确保结果更准确、更具体、更有用。\n\n 提示词：{draft}",
+    "category": "提示词工程",
+    "tags": [
+      "提示词优化",
+      "清晰度",
+      "最佳实践",
+      "提示词写作"
+    ],
+    "variables": [
+      "draft"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Comprehensive Listing Task",
-    "content": "List as many relevant items, examples, or ideas as possible related to the following topic or question. Aim for completeness, accuracy, and clarity. Topic: {topic}",
-    "category": "Brainstorming & Idea Generation",
-    "tags": ["listing", "brainstorming", "comprehensiveness", "creativity"],
-    "variables": ["topic"],
+    "title": "全面列举任务",
+    "content": "请围绕以下主题或问题，尽可能多地列出相关条目、示例或想法，力求全面、准确、清晰。主题：{topic}",
+    "category": "创意与头脑风暴",
+    "tags": [
+      "列举",
+      "头脑风暴",
+      "全面性",
+      "创意"
+    ],
+    "variables": [
+      "topic"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Identify Effective Frameworks",
-    "content": "What are the most effective frameworks, methods, or models to {objective}? For each framework, explain its core idea, advantages, and when it is best applied.",
-    "category": "Analytical Thinking & Problem Solving",
-    "tags": ["frameworks", "analysis", "problem-solving", "methods"],
-    "variables": ["objective"],
+    "title": "找出有效的分析框架",
+    "content": "针对{objective}，最有效的框架、方法或模型有哪些？请对每个框架说明其核心思想、优势及最适用的场景。",
+    "category": "思维与逻辑",
+    "tags": [
+      "框架",
+      "分析",
+      "问题解决",
+      "方法"
+    ],
+    "variables": [
+      "objective"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Decompose a Big Goal",
-    "content": "Break down the goal '{goal}' into a hierarchy: outcomes → milestones → deliverables → tasks. Include dependencies, required resources, estimated effort, risks, and success metrics. Conclude with a 2-week starter plan that fits {timeframe} and {constraints}.",
-    "category": "Planning & Execution",
-    "tags": ["goal-setting", "planning", "work-breakdown", "roadmap"],
-    "variables": ["goal", "timeframe", "constraints"],
+    "title": "分解大目标",
+    "content": "请把目标「{goal}」分解为层级结构：成果 → 里程碑 → 交付物 → 任务。包含依赖关系、所需资源、工作量估算、风险和成功指标。最后给出一个符合{timeframe}和{constraints}的两周启动计划。",
+    "category": "产品与运营",
+    "tags": [
+      "目标设定",
+      "规划",
+      "任务拆解",
+      "路线图"
+    ],
+    "variables": [
+      "goal",
+      "timeframe",
+      "constraints"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Socratic Tutor Session",
-    "content": "Act as a Socratic tutor for the topic '{topic}'. Ask me one question at a time, escalating from fundamentals to applications. If I answer incorrectly, give a brief hint and a simpler checkpoint question. Finish with a concise summary and 3 practice problems tailored to my level: {level}.",
-    "category": "Learning & Teaching",
-    "tags": ["socratic", "tutoring", "learning", "practice"],
-    "variables": ["topic", "level"],
+    "title": "苏格拉底式辅导",
+    "content": "请就主题「{topic}」担任苏格拉底式导师，一次只问我一个问题，从基础逐步深入到应用。如果我答错，请给出简短提示和一个更简单的检查点问题。最后用简明总结收尾，并根据我的水平（{level}）出 3 道练习题。",
+    "category": "学习与教学",
+    "tags": [
+      "苏格拉底式",
+      "辅导",
+      "学习",
+      "练习"
+    ],
+    "variables": [
+      "topic",
+      "level"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Compare-and-Contrast Matrix",
-    "content": "Create a comparison matrix for these items: {items}. Columns: criteria {criteria}. Rows: items. Fill with concise, evidence-based notes. Conclude with: (1) key trade-offs, (2) recommended choice for {context}, (3) one-sentence rationale.",
-    "category": "Analysis",
-    "tags": ["comparison", "decision-making", "trade-offs"],
-    "variables": ["items", "criteria", "context"],
+    "title": "对比分析矩阵",
+    "content": "请为以下对象建立对比矩阵：{items}。列为评判标准（{criteria}），行为对比对象。用简洁、有依据的说明填充。最后给出：(1) 关键取舍；(2) 针对{context}的推荐选择；(3) 一句话理由。",
+    "category": "分析与研究",
+    "tags": [
+      "对比",
+      "决策",
+      "取舍"
+    ],
+    "variables": [
+      "items",
+      "criteria",
+      "context"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Explain Twice: ELI5 then Technical",
-    "content": "Explain '{topic}' in two passes: (1) ELI5 using familiar analogies; (2) A technical explanation for a knowledgeable audience, including definitions, equations or algorithms if relevant, and a tiny example.",
-    "category": "Explaining Concepts",
-    "tags": ["ELI5", "technical", "communication"],
-    "variables": ["topic"],
+    "title": "两遍讲解：先通俗后专业",
+    "content": "请分两遍解释「{topic}」：(1) 用生活化的类比讲给外行听（ELI5）；(2) 面向内行的技术性解释，包括定义、相关公式或算法，并附一个小例子。",
+    "category": "学习与教学",
+    "tags": [
+      "通俗解释",
+      "技术解释",
+      "沟通"
+    ],
+    "variables": [
+      "topic"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Reverse-Engineer an Exemplar",
-    "content": "Analyze this exemplar work: {exemplar}. Identify its structure, patterns, voice, and tactics. Produce a style guide with do's/don'ts and a reusable outline template that would generate similar quality results for {use_case}.",
-    "category": "Writing & Craft",
-    "tags": ["reverse-engineering", "style", "templates"],
-    "variables": ["exemplar", "use_case"],
+    "title": "逆向拆解范文",
+    "content": "请分析这篇示范作品：{exemplar}。找出它的结构、模式、语气和技巧，输出一份风格指南（该做与不该做），以及一个可复用的提纲模板，用于在{use_case}上产出同等质量的结果。",
+    "category": "写作与编辑",
+    "tags": [
+      "逆向工程",
+      "风格",
+      "模板"
+    ],
+    "variables": [
+      "exemplar",
+      "use_case"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Generate Multi-Analogies",
-    "content": "Create 7 distinct analogies/metaphors to explain '{concept}' from different domains (nature, sports, finance, engineering, art, everyday life, history). For each, state the mapping and one limitation of the analogy.",
-    "category": "Creativity & Understanding",
-    "tags": ["analogies", "metaphors", "learning"],
-    "variables": ["concept"],
+    "title": "多领域类比生成",
+    "content": "请用来自不同领域（自然、体育、金融、工程、艺术、日常生活、历史）的 7 个不同类比或比喻来解释「{concept}」。每个类比请说明映射关系和该类比的一个局限。",
+    "category": "创意与头脑风暴",
+    "tags": [
+      "类比",
+      "比喻",
+      "学习"
+    ],
+    "variables": [
+      "concept"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Error-Finding and Correction Pass",
-    "content": "Proofread and edit the following text for clarity, correctness, and concision. List errors by type (grammar, logic, citation, math), propose fixes, and provide a clean revised version. Text: {text}",
-    "category": "Editing & Quality",
-    "tags": ["editing", "proofreading", "quality"],
-    "variables": ["text"],
+    "title": "找错与修正",
+    "content": "请校对并编辑以下文本，提升清晰度、正确性和简洁性。按类型（语法、逻辑、引用、数学）列出错误，给出修改建议，并提供一份干净的修订版。文本：{text}",
+    "category": "写作与编辑",
+    "tags": [
+      "编辑",
+      "校对",
+      "质量"
+    ],
+    "variables": [
+      "text"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Reading-to-Notes Pipeline",
-    "content": "Transform this source into structured notes. Steps: (1) key points; (2) definitions; (3) claims with supporting evidence; (4) open questions; (5) 3 flashcards (Q/A); (6) 1-paragraph synthesis. Source: {source_text}",
-    "category": "Research & Note-Taking",
-    "tags": ["notes", "synthesis", "flashcards"],
-    "variables": ["source_text"],
+    "title": "阅读转笔记流水线",
+    "content": "请把以下材料整理成结构化笔记，步骤：(1) 要点；(2) 定义；(3) 论点及支撑证据；(4) 待解决的问题；(5) 3 张闪卡（问答）；(6) 一段话综述。材料：{source_text}",
+    "category": "分析与研究",
+    "tags": [
+      "笔记",
+      "综述",
+      "闪卡"
+    ],
+    "variables": [
+      "source_text"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Decision Brief (One Page)",
-    "content": "Draft a decision brief for {decision}. Include: context, options, criteria, weighted scoring table, top risks, mitigations, and a clear recommendation with next steps for the next {time_window}.",
-    "category": "Decision Making",
-    "tags": ["brief", "scoring", "recommendation"],
-    "variables": ["decision", "time_window"],
+    "title": "一页纸决策简报",
+    "content": "请为{decision}起草一页纸决策简报，包括：背景、可选方案、评判标准、加权评分表、主要风险、应对措施，以及明确的建议和未来{time_window}的下一步行动。",
+    "category": "决策与风险",
+    "tags": [
+      "简报",
+      "评分",
+      "建议"
+    ],
+    "variables": [
+      "decision",
+      "time_window"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "First Principles Derivation",
-    "content": "Reframe the problem '{problem}' from first principles. List assumptions, question each, derive solution paths that do not rely on convention, and propose a minimally sufficient experiment to test the most uncertain assumption.",
-    "category": "Problem Solving",
-    "tags": ["first-principles", "assumptions", "experimentation"],
-    "variables": ["problem"],
+    "title": "第一性原理推导",
+    "content": "请从第一性原理出发重新审视问题「{problem}」：列出假设并逐一质疑，推导出不依赖惯例的解决路径，并设计一个最小可行实验来检验最不确定的假设。",
+    "category": "思维与逻辑",
+    "tags": [
+      "第一性原理",
+      "假设",
+      "实验"
+    ],
+    "variables": [
+      "problem"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Deliberate Practice Plan",
-    "content": "Design a 4-week deliberate practice plan to improve {skill} from {current_level} to {target_level} with {time_budget} per week. Include drills, feedback loops, metrics, and weekly reflection prompts.",
-    "category": "Skill Building",
-    "tags": ["practice", "feedback", "metrics"],
-    "variables": ["skill", "current_level", "target_level", "time_budget"],
+    "title": "刻意练习计划",
+    "content": "请设计一个为期 4 周的刻意练习计划，把{skill}从{current_level}提升到{target_level}，每周可投入{time_budget}。包括训练科目、反馈机制、量化指标和每周反思问题。",
+    "category": "学习与教学",
+    "tags": [
+      "练习",
+      "反馈",
+      "指标"
+    ],
+    "variables": [
+      "skill",
+      "current_level",
+      "target_level",
+      "time_budget"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Systematic Research Plan",
-    "content": "For the question '{research_question}', outline a systematic mini-review: search strategy, inclusion/exclusion criteria, screening steps, data extraction schema, and synthesis method. Conclude with expected biases and how to mitigate them.",
-    "category": "Research Methods",
-    "tags": ["systematic-review", "methods", "bias"],
-    "variables": ["research_question"],
+    "title": "系统性研究方案",
+    "content": "针对问题「{research_question}」，请设计一个系统性小型综述方案：检索策略、纳入/排除标准、筛选步骤、数据提取表和综合方法。最后列出可能出现的偏差及规避方法。",
+    "category": "分析与研究",
+    "tags": [
+      "系统综述",
+      "方法",
+      "偏差"
+    ],
+    "variables": [
+      "research_question"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Fermi Estimate with Sensitivity",
-    "content": "Provide a Fermi estimate for: {estimation_question}. Show assumptions, a back-of-the-envelope calculation, low/base/high scenarios, and a sensitivity table highlighting which variable drives the result the most.",
-    "category": "Quantitative Reasoning",
-    "tags": ["estimation", "sensitivity", "quantitative"],
-    "variables": ["estimation_question"],
+    "title": "费米估算与敏感性分析",
+    "content": "请对以下问题做费米估算：{estimation_question}。展示假设、粗略计算过程、低/中/高三种情景，并用敏感性分析指出对结果影响最大的变量。",
+    "category": "分析与研究",
+    "tags": [
+      "估算",
+      "敏感性",
+      "定量"
+    ],
+    "variables": [
+      "estimation_question"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Steelman Counterarguments",
-    "content": "Given the claim '{claim}', produce the strongest counterarguments from at least three distinct perspectives. For each, list the best evidence, where the original claim is most vulnerable, and what would change your mind.",
-    "category": "Critical Thinking",
-    "tags": ["steelman", "debate", "bias"],
-    "variables": ["claim"],
+    "title": "最强反方论证",
+    "content": "针对观点「{claim}」，请从至少三个不同立场出发，给出最强的反驳论证。每个反驳列出最有力的证据、原观点最脆弱之处，以及什么证据会让你改变看法。",
+    "category": "思维与逻辑",
+    "tags": [
+      "最强反驳",
+      "辩论",
+      "偏见"
+    ],
+    "variables": [
+      "claim"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Red Team Review",
-    "content": "Act as a 'red team' to stress-test this plan: {plan}. Identify failure modes, hidden assumptions, adversarial scenarios, and ethical risks. Provide prioritized fixes and a quick validation checklist.",
-    "category": "Risk & Reliability",
-    "tags": ["red-team", "risks", "assumptions"],
-    "variables": ["plan"],
+    "title": "红队压力测试",
+    "content": "请扮演「红队」对以下方案做压力测试：{plan}。找出失效模式、隐藏假设、对抗性情景和伦理风险，给出按优先级排序的修复建议和一份快速验证清单。",
+    "category": "决策与风险",
+    "tags": [
+      "红队",
+      "风险",
+      "假设"
+    ],
+    "variables": [
+      "plan"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Rubric Builder",
-    "content": "Create a scoring rubric for {task}. Include 4–6 criteria, each with 4 levels (excellent/good/fair/poor) and behavioral anchors. Provide a one-line usage guide and a sample graded example.",
-    "category": "Evaluation & Assessment",
-    "tags": ["rubric", "assessment", "grading"],
-    "variables": ["task"],
+    "title": "评分量规生成",
+    "content": "请为{task}制定评分量规：包含 4–6 项标准，每项分 4 个等级（优秀/良好/合格/不合格）并附行为描述。附一句使用说明和一个评分示例。",
+    "category": "学习与教学",
+    "tags": [
+      "量规",
+      "评估",
+      "评分"
+    ],
+    "variables": [
+      "task"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Teach-Back Test",
-    "content": "Teach the topic '{topic}' as a step-by-step mini-lesson for {audience}. Then propose a 5-question teach-back quiz and model ideal answers.",
-    "category": "Learning & Teaching",
-    "tags": ["instructional-design", "quiz", "teach-back"],
-    "variables": ["topic", "audience"],
+    "title": "讲出来测试（Teach-Back）",
+    "content": "请以逐步小课的形式向{audience}讲解「{topic}」，然后出 5 道「讲出来」测验题并给出理想答案示范。",
+    "category": "学习与教学",
+    "tags": [
+      "教学设计",
+      "测验",
+      "讲出来"
+    ],
+    "variables": [
+      "topic",
+      "audience"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Reasoning Summary (No Hidden Steps)",
-    "content": "Provide a concise, high-level rationale for your answer to '{question}' using 3–5 bullet points. Avoid revealing step-by-step internal thought; focus on key factors, trade-offs, and final conclusion.",
-    "category": "Reasoning & Communication",
-    "tags": ["rationale", "summary", "clarity"],
-    "variables": ["question"],
+    "title": "推理摘要（结论依据）",
+    "content": "请用 3–5 个要点，简明扼要地说明你回答「{question}」的理由。不必展示逐步的内部思考过程，重点讲清关键因素、取舍和最终结论。",
+    "category": "思维与逻辑",
+    "tags": [
+      "理由",
+      "摘要",
+      "清晰度"
+    ],
+    "variables": [
+      "question"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Multi-Source Synthesis",
-    "content": "Synthesize the following sources {sources} into a coherent summary. Extract overlapping insights, disagreements, and novel contributions. End with a reconciled viewpoint and 2 follow-up research questions.",
-    "category": "Research & Synthesis",
-    "tags": ["synthesis", "literature", "comparison"],
-    "variables": ["sources"],
+    "title": "多来源综合",
+    "content": "请把以下资料{sources}综合成一份连贯的总结：提取共识、分歧和新颖观点，最后给出一个调和后的观点，并提出 2 个后续研究问题。",
+    "category": "分析与研究",
+    "tags": [
+      "综合",
+      "文献",
+      "对比"
+    ],
+    "variables": [
+      "sources"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Reformat to JSON Schema",
-    "content": "Convert the following specification into a JSON Schema draft-2020-12, including types, required fields, enum constraints, and example instances. Spec: {description}",
-    "category": "Data & Modeling",
-    "tags": ["json", "schema", "validation"],
-    "variables": ["description"],
+    "title": "转换为 JSON Schema",
+    "content": "请把以下规格说明转换为 JSON Schema draft-2020-12，包括类型、必填字段、枚举约束和示例实例。规格：{description}",
+    "category": "编程与数据",
+    "tags": [
+      "json",
+      "schema",
+      "校验"
+    ],
+    "variables": [
+      "description"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Entity and Relation Extraction",
-    "content": "From the text below, extract entities (with types) and relations as triples (subject, relation, object). Return JSON arrays 'entities' and 'relations'. Text: {text}",
-    "category": "NLP & Information Extraction",
-    "tags": ["entities", "relations", "nlp"],
-    "variables": ["text"],
+    "title": "实体与关系抽取",
+    "content": "请从下文中抽取实体（含类型）和关系，以三元组（主体、关系、客体）表示，并以 JSON 数组返回 entities 和 relations。文本：{text}",
+    "category": "编程与数据",
+    "tags": [
+      "实体",
+      "关系",
+      "nlp"
+    ],
+    "variables": [
+      "text"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Glossary Builder",
-    "content": "Create a compact glossary for the domain '{domain}' at the '{level}' level (beginner/intermediate/advanced). For each term: definition, why it matters, and 1 example.",
-    "category": "Knowledge Organization",
-    "tags": ["glossary", "definitions", "learning"],
-    "variables": ["domain", "level"],
+    "title": "术语表生成",
+    "content": "请为「{domain}」领域编写一份简明术语表，面向{level}水平（初学/进阶/高级）的读者。每个术语包括：定义、重要性说明和 1 个例子。",
+    "category": "学习与教学",
+    "tags": [
+      "术语表",
+      "定义",
+      "学习"
+    ],
+    "variables": [
+      "domain",
+      "level"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Misconception Refuter",
-    "content": "List the top misconceptions about '{topic}'. For each: why it's appealing, what's wrong, the correct view, and a memorable correction analogy.",
-    "category": "Critical Thinking",
-    "tags": ["misconceptions", "debunking", "education"],
-    "variables": ["topic"],
+    "title": "常见误解澄清",
+    "content": "请列出关于「{topic}」最常见的误解。对每个误解说明：它为什么有吸引力、错在哪里、正确的观点是什么，并用一个便于记忆的类比来纠正。",
+    "category": "思维与逻辑",
+    "tags": [
+      "误解",
+      "辟谣",
+      "教育"
+    ],
+    "variables": [
+      "topic"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Trade-off Analysis",
-    "content": "Analyze the trade-offs between {approach_a} and {approach_b} for {context}. Consider cost, complexity, scalability, performance, security, and time-to-value. End with a decision rule.",
-    "category": "Architecture & Strategy",
-    "tags": ["trade-offs", "strategy", "decision"],
-    "variables": ["approach_a", "approach_b", "context"],
+    "title": "权衡分析",
+    "content": "请分析在{context}场景下{approach_a}与{approach_b}之间的权衡：考虑成本、复杂度、可扩展性、性能、安全性和见效时间。最后给出一条决策规则。",
+    "category": "决策与风险",
+    "tags": [
+      "取舍",
+      "战略",
+      "决策"
+    ],
+    "variables": [
+      "approach_a",
+      "approach_b",
+      "context"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "30-60-90 Day Plan",
-    "content": "Draft a 30-60-90 day plan for {role_or_goal}. Include learning objectives, quick wins, relationship map, systems/processes to build, and metrics for each phase.",
-    "category": "Onboarding & Planning",
-    "tags": ["plan", "milestones", "metrics"],
-    "variables": ["role_or_goal"],
+    "title": "30-60-90 天计划",
+    "content": "请为{role_or_goal}起草一份 30-60-90 天计划：包括学习目标、快速见效的成果、关系图谱、要搭建的体系/流程，以及每个阶段的衡量指标。",
+    "category": "产品与运营",
+    "tags": [
+      "计划",
+      "里程碑",
+      "指标"
+    ],
+    "variables": [
+      "role_or_goal"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Pre-Mortem Workshop",
-    "content": "Imagine the project '{project}' failed spectacularly in 6 months. List plausible causes by category (technical, people, process, external). For each, propose a prevention or early warning signal.",
-    "category": "Risk Management",
-    "tags": ["pre-mortem", "risk", "planning"],
-    "variables": ["project"],
+    "title": "事前验尸（Pre-Mortem）",
+    "content": "请想象项目「{project}」在 6 个月后惨遭失败。按类别（技术、人员、流程、外部）列出可能的原因，并为每个原因提出预防措施或早期预警信号。",
+    "category": "决策与风险",
+    "tags": [
+      "事前验尸",
+      "风险",
+      "规划"
+    ],
+    "variables": [
+      "project"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Post-Mortem Template",
-    "content": "Write a blameless post-mortem for incident '{incident}'. Sections: summary, impact, timeline, root causes (5 Whys), what went well, what went poorly, action items with owners and dates.",
-    "category": "Operations & Reliability",
-    "tags": ["post-mortem", "reliability", "process"],
-    "variables": ["incident"],
+    "title": "事后复盘模板",
+    "content": "请为事故「{incident}」撰写一份无指责复盘报告。章节：摘要、影响、时间线、根本原因（5 个为什么）、做得好的地方、做得不好的地方，以及带责任人和日期的行动项。",
+    "category": "产品与运营",
+    "tags": [
+      "复盘",
+      "可靠性",
+      "流程"
+    ],
+    "variables": [
+      "incident"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Socratic Self-Coaching",
-    "content": "Help me work through this dilemma: {dilemma}. Ask reflective questions to surface values, constraints, and options. After 6–8 questions, summarize insights and suggest a small next step.",
-    "category": "Personal Development",
-    "tags": ["coaching", "reflection", "decisions"],
-    "variables": ["dilemma"],
+    "title": "苏格拉底式自我教练",
+    "content": "请帮我梳理这个两难困境：{dilemma}。用反思性提问帮我澄清价值观、限制条件和可选项。提问 6–8 轮后，总结洞见并建议一个小的下一步行动。",
+    "category": "个人成长与协作",
+    "tags": [
+      "教练",
+      "反思",
+      "决策"
+    ],
+    "variables": [
+      "dilemma"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "4-Week Learning Syllabus",
-    "content": "Create a 4-week syllabus for {subject} with {hours_per_week} hours/week. Include weekly objectives, readings/resources, exercises, and an end-of-week check. Provide a final project brief.",
-    "category": "Curriculum Design",
-    "tags": ["syllabus", "learning", "practice"],
-    "variables": ["subject", "hours_per_week"],
+    "title": "四周学习大纲",
+    "content": "请为{subject}制定一份 4 周学习大纲，每周{hours_per_week}小时。包括每周目标、阅读材料/资源、练习和周末自测，并提供一个期末项目说明。",
+    "category": "学习与教学",
+    "tags": [
+      "大纲",
+      "学习",
+      "练习"
+    ],
+    "variables": [
+      "subject",
+      "hours_per_week"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Test-First Spec",
-    "content": "Write test cases first for the following specification in {language}. Include unit and property tests with clear inputs/outputs and edge cases. Spec: {spec}",
-    "category": "Software Quality",
-    "tags": ["testing", "tdd", "specification"],
-    "variables": ["language", "spec"],
+    "title": "测试优先规格",
+    "content": "请针对以下{language}规格说明先写测试用例：包括单元测试和属性测试，写清输入/输出和边界情况。规格：{spec}",
+    "category": "编程与数据",
+    "tags": [
+      "测试",
+      "tdd",
+      "规格"
+    ],
+    "variables": [
+      "language",
+      "spec"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "API Contract Sketch",
-    "content": "Draft an API contract for {api_name}. Provide endpoints, methods, request/response JSON, status codes, error model, idempotency guidance, and 2 example client calls.",
-    "category": "API Design",
-    "tags": ["api", "contracts", "design"],
-    "variables": ["api_name"],
+    "title": "API 契约草稿",
+    "content": "请为{api_name}起草 API 契约：端点、方法、请求/响应 JSON、状态码、错误模型、幂等性指引，以及 2 个客户端调用示例。",
+    "category": "编程与数据",
+    "tags": [
+      "api",
+      "契约",
+      "设计"
+    ],
+    "variables": [
+      "api_name"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Data Cleaning Plan",
-    "content": "Given this dataset description: {dataset_description}, outline a cleaning plan: schema checks, missingness strategy, outlier handling, normalization, validations, and a reproducible pipeline sketch.",
-    "category": "Data Engineering",
-    "tags": ["data-quality", "pipelines", "validation"],
-    "variables": ["dataset_description"],
+    "title": "数据清洗方案",
+    "content": "基于以下数据集描述：{dataset_description}，请制定清洗方案：模式检查、缺失值策略、异常值处理、归一化、校验规则，以及一个可复现的流水线草图。",
+    "category": "编程与数据",
+    "tags": [
+      "数据质量",
+      "流水线",
+      "校验"
+    ],
+    "variables": [
+      "dataset_description"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Explain a Code Diff",
-    "content": "Summarize what changed in the following diff and why it matters. Note risks, performance/security implications, and suggested follow-up tests. Diff: {diff}",
-    "category": "Code Review",
-    "tags": ["diff", "review", "risk"],
-    "variables": ["diff"],
+    "title": "代码变更解读",
+    "content": "请总结以下代码变更（diff）改了什么、为什么重要，指出风险、性能/安全影响和需要补充的测试。变更：{diff}",
+    "category": "编程与数据",
+    "tags": [
+      "diff",
+      "评审",
+      "风险"
+    ],
+    "variables": [
+      "diff"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Refactor Plan",
-    "content": "Propose a refactor plan for this codebase fragment: {code}. Identify smells, propose target design, incremental steps, safety nets (tests), and expected benefits.",
-    "category": "Software Design",
-    "tags": ["refactoring", "design", "code-smells"],
-    "variables": ["code"],
+    "title": "重构方案",
+    "content": "请为以下代码片段提出重构方案：{code}。识别代码坏味道，提出目标设计、渐进式步骤、安全网（测试）和预期收益。",
+    "category": "编程与数据",
+    "tags": [
+      "重构",
+      "设计",
+      "代码坏味道"
+    ],
+    "variables": [
+      "code"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Performance Profiling Hypotheses",
-    "content": "For the system '{system_description}', list likely performance bottlenecks, hypothesize root causes, identify key metrics, and propose a profiling/benchmark plan. End with 3 low-risk optimizations.",
-    "category": "Performance Engineering",
-    "tags": ["profiling", "optimization", "metrics"],
-    "variables": ["system_description"],
+    "title": "性能瓶颈假设",
+    "content": "请针对系统「{system_description}」列出可能的性能瓶颈，提出根因假设，确定关键指标，并制定性能分析/基准测试计划。最后给出 3 个低风险的优化建议。",
+    "category": "编程与数据",
+    "tags": [
+      "性能分析",
+      "优化",
+      "指标"
+    ],
+    "variables": [
+      "system_description"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Security Threat Modeling (STRIDE)",
-    "content": "Perform a STRIDE threat model for {system}. For each category, list threats, impacted assets, likelihood/impact, and mitigations. Provide a prioritized top-5 action list.",
-    "category": "Security",
-    "tags": ["threat-modeling", "stride", "mitigation"],
-    "variables": ["system"],
+    "title": "安全威胁建模（STRIDE）",
+    "content": "请对{system}进行 STRIDE 威胁建模：每个类别列出威胁、受影响资产、可能性/影响和缓解措施，并给出按优先级排序的前 5 项行动清单。",
+    "category": "编程与数据",
+    "tags": [
+      "威胁建模",
+      "stride",
+      "缓解"
+    ],
+    "variables": [
+      "system"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Decision Tree Builder",
-    "content": "Construct a decision tree for choosing among {options} given factors {factors}. Show thresholds/branches textually and summarize the implied decision policy.",
-    "category": "Decision Science",
-    "tags": ["decision-tree", "policy", "thresholds"],
-    "variables": ["options", "factors"],
+    "title": "决策树构建",
+    "content": "请针对{options}这些选项，基于因素{factors}构建一棵决策树：用文字表示阈值/分支，并总结其中隐含的决策策略。",
+    "category": "决策与风险",
+    "tags": [
+      "决策树",
+      "策略",
+      "阈值"
+    ],
+    "variables": [
+      "options",
+      "factors"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "OKR Draft",
-    "content": "Draft 3 Objectives and 3–4 Key Results each for the mission '{mission}'. Ensure Key Results are outcome-focused, measurable, and time-bounded. Include 2 anti-goals to avoid.",
-    "category": "Strategy & Execution",
-    "tags": ["okr", "metrics", "strategy"],
-    "variables": ["mission"],
+    "title": "OKR 草稿",
+    "content": "请围绕使命「{mission}」起草 3 个目标（O），每个目标配 3–4 个关键结果（KR）。关键结果必须聚焦成果、可衡量、有时限，并附 2 个要避免的反向目标。",
+    "category": "产品与运营",
+    "tags": [
+      "okr",
+      "指标",
+      "战略"
+    ],
+    "variables": [
+      "mission"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Snowflake Story Outline",
-    "content": "Using the Snowflake method, expand the story/piece '{premise}' from a one-sentence idea to a detailed scene list: sentence → paragraph → character synopses → scene beats.",
-    "category": "Writing & Story",
-    "tags": ["outline", "story-structure", "snowflake"],
-    "variables": ["premise"],
+    "title": "雪花法故事大纲",
+    "content": "请用雪花法把故事/作品「{premise}」从一句话扩展为详细的场景清单：一句话 → 一段话 → 人物小传 → 场景节拍。",
+    "category": "写作与编辑",
+    "tags": [
+      "大纲",
+      "故事结构",
+      "雪花法"
+    ],
+    "variables": [
+      "premise"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Tone & Audience Rewriter",
-    "content": "Rewrite the draft for {audience} with the desired tone '{tone}'. Keep the core meaning, improve clarity, and provide 2 alternative openings and 2 closings. Draft: {draft}",
-    "category": "Editing & Style",
-    "tags": ["tone", "audience", "rewrite"],
-    "variables": ["audience", "tone", "draft"],
+    "title": "语气与受众改写",
+    "content": "请把以下草稿改写给{audience}看，语气为「{tone}」。保持核心含义，提升清晰度，并提供 2 个备选开头和 2 个备选结尾。草稿：{draft}",
+    "category": "写作与编辑",
+    "tags": [
+      "语气",
+      "受众",
+      "改写"
+    ],
+    "variables": [
+      "audience",
+      "tone",
+      "draft"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Summary with Fact-Check Flags",
-    "content": "Summarize the text below in 5–7 bullets. Flag any statements that look like claims of fact and add a '[VERIFY]' note. Text: {text}",
-    "category": "Summarization & QA",
-    "tags": ["summary", "fact-check", "verification"],
-    "variables": ["text"],
+    "title": "带事实核查标记的摘要",
+    "content": "请用 5–7 个要点总结以下文本，凡像是事实性断言的表述请加上「[待核实]」标记。文本：{text}",
+    "category": "写作与编辑",
+    "tags": [
+      "摘要",
+      "事实核查",
+      "验证"
+    ],
+    "variables": [
+      "text"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Cross-Language Styled Translation",
-    "content": "Translate the following into {target_language} while matching the style '{style}'. Preserve technical terms and provide footnotes for culture-bound references. Text: {text}",
-    "category": "Translation",
-    "tags": ["translation", "style", "localization"],
-    "variables": ["target_language", "style", "text"],
+    "title": "跨语言风格化翻译",
+    "content": "请把以下文本翻译成{target_language}，风格为「{style}」。保留专业术语，为文化相关表述加脚注。文本：{text}",
+    "category": "写作与编辑",
+    "tags": [
+      "翻译",
+      "风格",
+      "本地化"
+    ],
+    "variables": [
+      "target_language",
+      "style",
+      "text"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Prompt Audit & Risk Check",
-    "content": "Audit this prompt for ambiguity, missing constraints, and potential bias. Propose improvements and a safer alternative if relevant. Prompt: {prompt}",
-    "category": "Prompt Engineering",
-    "tags": ["audit", "safety", "clarity"],
-    "variables": ["prompt"],
+    "title": "提示词体检与风险检查",
+    "content": "请体检以下提示词：歧义、缺失的约束、潜在偏见。提出改进建议，必要时给出更安全的替代版本。提示词：{prompt}",
+    "category": "提示词工程",
+    "tags": [
+      "体检",
+      "安全",
+      "清晰度"
+    ],
+    "variables": [
+      "prompt"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Synthesize Debate & Common Ground",
-    "content": "Given these opposing positions {positions}, map areas of agreement, precise points of contention, and bridge proposals. Conclude with a joint experiment that could move both sides forward.",
-    "category": "Mediation & Debate",
-    "tags": ["debate", "synthesis", "mediation"],
-    "variables": ["positions"],
+    "title": "辩论综合与共识寻找",
+    "content": "给定以下对立立场{positions}，请梳理共识区域、确切的争点，以及折中方案。最后设计一个能让双方都往前走的联合实验。",
+    "category": "个人成长与协作",
+    "tags": [
+      "辩论",
+      "综合",
+      "调解"
+    ],
+    "variables": [
+      "positions"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "MVP Scope Cut & Prioritization",
-    "content": "For the product idea '{product_idea}', define an MVP by removing or deferring features. Use MoSCoW or RICE briefly, list the riskiest assumptions, and propose a single high-leverage user test.",
-    "category": "Product Strategy",
-    "tags": ["mvp", "prioritization", "product"],
-    "variables": ["product_idea"],
+    "title": "MVP 范围裁剪与优先级",
+    "content": "针对产品想法「{product_idea}」，请通过删减或延后功能来定义 MVP。简要使用 MoSCoW 或 RICE 方法，列出最危险的假设，并设计一个高杠杆的用户测试。",
+    "category": "产品与运营",
+    "tags": [
+      "mvp",
+      "优先级",
+      "产品"
+    ],
+    "variables": [
+      "product_idea"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Knowledge Gaps Map & Reading List",
-    "content": "For the topic '{topic}', list prerequisite concepts, current gaps, and a staged reading list (foundational → intermediate → advanced). Include one 'capstone' application task.",
-    "category": "Learning Strategy",
-    "tags": ["reading-list", "prerequisites", "skills"],
-    "variables": ["topic"],
+    "title": "知识缺口地图与书单",
+    "content": "针对主题「{topic}」，请列出前置概念、当前知识缺口，以及一份分阶书单（基础 → 进阶 → 高级），并附一个「毕业」应用任务。",
+    "category": "学习与教学",
+    "tags": [
+      "书单",
+      "前置知识",
+      "技能"
+    ],
+    "variables": [
+      "topic"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Back-of-the-Envelope Calculator",
-    "content": "Quickly estimate '{question}' with a back-of-the-envelope calculation. Show variables, ballpark values, the calculation, and sanity checks. State the main caveat.",
-    "category": "Estimation",
-    "tags": ["estimation", "approximation", "sanity-check"],
-    "variables": ["question"],
+    "title": "快速毛估估算器",
+    "content": "请用毛估估算快速回答「{question}」：列出变量、取值范围、计算过程和合理性检验，并说明主要的不确定因素。",
+    "category": "分析与研究",
+    "tags": [
+      "估算",
+      "近似",
+      "合理性检查"
+    ],
+    "variables": [
+      "question"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Memory Palace Builder",
-    "content": "Turn the items {items} into a memory palace: pick a familiar location, map loci, create vivid hooks for each item, and provide a rehearsal schedule.",
-    "category": "Memory & Study",
-    "tags": ["mnemonics", "memory-palace", "learning"],
-    "variables": ["items"],
+    "title": "记忆宫殿构建",
+    "content": "请把以下内容{items}变成一座记忆宫殿：选一个熟悉的场所，规划记忆点位，为每个条目设计生动的记忆钩子，并给出复习时间表。",
+    "category": "学习与教学",
+    "tags": [
+      "记忆术",
+      "记忆宫殿",
+      "学习"
+    ],
+    "variables": [
+      "items"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Visualize a Concept Three Ways",
-    "content": "For the concept '{concept}', propose three alternative visuals: (1) diagram, (2) timeline/flow, (3) table/matrix. For each, list elements, layout, and the key takeaway.",
-    "category": "Communication Design",
-    "tags": ["visualization", "diagrams", "explanation"],
-    "variables": ["concept"],
+    "title": "一个概念三种可视化",
+    "content": "针对概念「{concept}」，请提出三种不同的可视化方案：(1) 示意图；(2) 时间线/流程图；(3) 表格/矩阵。每种说明构成元素、布局和核心要点。",
+    "category": "个人成长与协作",
+    "tags": [
+      "可视化",
+      "图表",
+      "讲解"
+    ],
+    "variables": [
+      "concept"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Spaced Repetition Card Generator",
-    "content": "From the content below, generate 10 high-quality flashcards (active recall, minimal information). Add hints and 'extra' fields for context. Content: {content_block}",
-    "category": "Learning Tools",
-    "tags": ["flashcards", "spacing", "active-recall"],
-    "variables": ["content_block"],
+    "title": "间隔重复闪卡生成",
+    "content": "请从以下内容生成 10 张高质量闪卡（主动回忆、信息量最小化），并附提示（hint）和补充说明（extra）字段。内容：{content_block}",
+    "category": "学习与教学",
+    "tags": [
+      "闪卡",
+      "间隔重复",
+      "主动回忆"
+    ],
+    "variables": [
+      "content_block"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Heuristic Checklist",
-    "content": "Create a checklist of heuristics ('rules of thumb') for {domain_decision}. Organize by stage, include a 'when it fails' note for each heuristic.",
-    "category": "Decision Aids",
-    "tags": ["heuristics", "checklist", "practical"],
-    "variables": ["domain_decision"],
+    "title": "经验法则清单",
+    "content": "请为{domain_decision}制定一份经验法则（启发式）清单：按阶段组织，每条法则附「什么时候会失灵」的注意事项。",
+    "category": "决策与风险",
+    "tags": [
+      "经验法则",
+      "清单",
+      "实用"
+    ],
+    "variables": [
+      "domain_decision"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Case Study Template",
-    "content": "Draft a case study template tailored to {audience} for {product_or_project}. Sections: problem, context, intervention, results (with metrics), lesson learned, and reusable assets.",
-    "category": "Content & Marketing",
-    "tags": ["case-study", "template", "metrics"],
-    "variables": ["audience", "product_or_project"],
+    "title": "案例研究模板",
+    "content": "请为{product_or_project}起草一份面向{audience}的案例研究模板。章节：问题、背景、干预措施、成果（含量化指标）、经验教训和可复用资产。",
+    "category": "个人成长与协作",
+    "tags": [
+      "案例研究",
+      "模板",
+      "指标"
+    ],
+    "variables": [
+      "audience",
+      "product_or_project"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Ethical Impact Scan",
-    "content": "Assess the ethical implications of {initiative}. Consider stakeholders, consent, privacy, fairness, transparency, and long-term effects. Suggest mitigations and a communication plan.",
-    "category": "Ethics & Policy",
-    "tags": ["ethics", "impact", "policy"],
-    "variables": ["initiative"],
+    "title": "伦理影响扫描",
+    "content": "请评估{initiative}的伦理影响：利益相关方、知情同意、隐私、公平性、透明度和长期效应。提出缓解措施和沟通方案。",
+    "category": "个人成长与协作",
+    "tags": [
+      "伦理",
+      "影响",
+      "政策"
+    ],
+    "variables": [
+      "initiative"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Assumption Inventory",
-    "content": "List explicit and implicit assumptions behind {plan_or_model}. Tag each as critical/non-critical and testable/non-testable. Propose the fastest test for the top 3 critical assumptions.",
-    "category": "Strategy & Validation",
-    "tags": ["assumptions", "validation", "testing"],
-    "variables": ["plan_or_model"],
+    "title": "假设清单盘点",
+    "content": "请列出{plan_or_model}背后的显性和隐性假设，标注每个假设是关键/非关键、可检验/不可检验，并为最关键的 3 个假设设计最快的检验方法。",
+    "category": "决策与风险",
+    "tags": [
+      "假设",
+      "验证",
+      "测试"
+    ],
+    "variables": [
+      "plan_or_model"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Algorithmic Walkthrough",
-    "content": "Explain how to solve '{problem}' with an algorithm. Provide a step-by-step outline, complexity analysis, and a small worked example.",
-    "category": "Algorithms & CS",
-    "tags": ["algorithm", "complexity", "example"],
-    "variables": ["problem"],
+    "title": "算法推导讲解",
+    "content": "请讲解如何用算法解决「{problem}」：给出分步思路、复杂度分析，并配一个小型演算示例。",
+    "category": "编程与数据",
+    "tags": [
+      "算法",
+      "复杂度",
+      "示例"
+    ],
+    "variables": [
+      "problem"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Dataset Documentation (Data Card)",
-    "content": "Write a data card for dataset '{dataset_name}': purpose, composition, collection method, preprocessing, intended uses, known limitations, and maintenance plan.",
-    "category": "Data Governance",
-    "tags": ["documentation", "dataset", "governance"],
-    "variables": ["dataset_name"],
+    "title": "数据集文档（数据卡）",
+    "content": "请为数据集「{dataset_name}」撰写数据卡：用途、构成、采集方法、预处理、预期用途、已知局限和维护计划。",
+    "category": "编程与数据",
+    "tags": [
+      "文档",
+      "数据集",
+      "治理"
+    ],
+    "variables": [
+      "dataset_name"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Hypothesis to Experiment",
-    "content": "Turn the hypothesis '{hypothesis}' into a minimal experiment: variables, control, measurement, success criteria, and timeline. Add likely confounders and how to handle them.",
-    "category": "Science & Testing",
-    "tags": ["experiment", "hypothesis", "design"],
-    "variables": ["hypothesis"],
+    "title": "假设变实验",
+    "content": "请把假设「{hypothesis}」转化为一个最小实验：变量、对照组、测量方式、成功标准和时间表，并指出可能的混杂因素及处理办法。",
+    "category": "科学与实验",
+    "tags": [
+      "实验",
+      "假设",
+      "设计"
+    ],
+    "variables": [
+      "hypothesis"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Product Requirements Outline",
-    "content": "Create a PRD for '{feature}'. Include problem, user stories, acceptance criteria, non-functional requirements, risks, and out-of-scope.",
-    "category": "Product Management",
-    "tags": ["prd", "requirements", "user-stories"],
-    "variables": ["feature"],
+    "title": "产品需求文档提纲",
+    "content": "请为「{feature}」编写 PRD 提纲：问题、用户故事、验收标准、非功能需求、风险和不做的范围。",
+    "category": "产品与运营",
+    "tags": [
+      "prd",
+      "需求",
+      "用户故事"
+    ],
+    "variables": [
+      "feature"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Customer Interview Guide",
-    "content": "Write a 20-minute interview guide to learn about {topic} from {persona}. Include warm-ups, core questions, probing follow-ups, and a closing ask. Avoid leading questions.",
-    "category": "UX Research",
-    "tags": ["interview", "ux", "research"],
-    "variables": ["topic", "persona"],
+    "title": "用户访谈提纲",
+    "content": "请编写一份 20 分钟的访谈提纲，向{persona}了解{topic}。包括暖场、核心问题、追问和收尾请求，避免诱导性提问。",
+    "category": "设计与用户研究",
+    "tags": [
+      "访谈",
+      "用户体验",
+      "调研"
+    ],
+    "variables": [
+      "topic",
+      "persona"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Storyboard the User Journey",
-    "content": "Create a 6-panel storyboard of the user journey for {scenario}. For each panel: user goal, action, emotion, and friction point. End with two opportunity areas.",
-    "category": "Design & UX",
-    "tags": ["storyboard", "journey", "ux"],
-    "variables": ["scenario"],
+    "title": "用户旅程分镜",
+    "content": "请为{scenario}制作用户旅程的 6 格分镜。每格包括：用户目标、行为、情绪和摩擦点。最后指出两个机会点。",
+    "category": "设计与用户研究",
+    "tags": [
+      "分镜",
+      "旅程",
+      "用户体验"
+    ],
+    "variables": [
+      "scenario"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Heuristic Redesign Suggestions",
-    "content": "Evaluate the interface/workflow '{ui_or_flow}' with Nielsen's heuristics. List violations, severity, examples, and concrete fixes.",
-    "category": "Design Critique",
-    "tags": ["heuristics", "usability", "redesign"],
-    "variables": ["ui_or_flow"],
+    "title": "可用性启发式评估",
+    "content": "请用尼尔森十大可用性原则评估界面/流程「{ui_or_flow}」：列出违反之处、严重程度、实例和具体修改建议。",
+    "category": "设计与用户研究",
+    "tags": [
+      "启发式",
+      "可用性",
+      "改版"
+    ],
+    "variables": [
+      "ui_or_flow"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Learning-by-Doing Project Brief",
-    "content": "Design a hands-on project to learn {skill}. Describe deliverables, constraints, evaluation criteria, and a peer-review rubric.",
-    "category": "Experiential Learning",
-    "tags": ["project", "learning", "rubric"],
-    "variables": ["skill"],
+    "title": "实战项目设计（边做边学）",
+    "content": "请设计一个用于学习{skill}的动手项目：说明交付物、约束条件、评价标准，以及同伴互评量规。",
+    "category": "学习与教学",
+    "tags": [
+      "项目",
+      "学习",
+      "量规"
+    ],
+    "variables": [
+      "skill"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Constraint-Based Creativity",
-    "content": "Generate 10 creative ideas for {goal} under these constraints: {constraints}. For each idea, include why it might work and one small next step.",
-    "category": "Creativity",
-    "tags": ["ideation", "constraints", "innovation"],
-    "variables": ["goal", "constraints"],
+    "title": "约束条件下的创意",
+    "content": "请在以下约束条件下为{goal}生成 10 个创意：{constraints}。每个创意说明为什么可能可行，以及一个小的下一步行动。",
+    "category": "创意与头脑风暴",
+    "tags": [
+      "创意生成",
+      "约束",
+      "创新"
+    ],
+    "variables": [
+      "goal",
+      "constraints"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Narrative Arc Mapper",
-    "content": "Map a narrative arc for '{story}' using a classic structure (Freytag or Hero's Journey). Provide beat-by-beat events and emotional stakes.",
-    "category": "Story Craft",
-    "tags": ["narrative", "structure", "beats"],
-    "variables": ["story"],
+    "title": "叙事弧线映射",
+    "content": "请用经典结构（弗雷塔格金字塔或英雄之旅）为「{story}」绘制叙事弧线：逐拍给出事件和情感赌注。",
+    "category": "写作与编辑",
+    "tags": [
+      "叙事",
+      "结构",
+      "节拍"
+    ],
+    "variables": [
+      "story"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Rhetorical Style Transfer",
-    "content": "Rewrite {text} in the rhetorical style '{style}' while preserving meaning. Highlight the stylistic choices used (diction, syntax, devices).",
-    "category": "Writing & Style",
-    "tags": ["style-transfer", "rhetoric", "editing"],
-    "variables": ["text", "style"],
+    "title": "修辞风格迁移",
+    "content": "请把{text}改写成「{style}」的修辞风格，同时保持原意，并指出用到的风格手法（用词、句式、修辞格）。",
+    "category": "写作与编辑",
+    "tags": [
+      "风格迁移",
+      "修辞",
+      "编辑"
+    ],
+    "variables": [
+      "text",
+      "style"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Argument Map",
-    "content": "Convert the following argument into a structured map: claims, premises, evidence, counterarguments, and rebuttals. Return as nested bullets. Argument: {argument}",
-    "category": "Logic & Reasoning",
-    "tags": ["argument", "mapping", "logic"],
-    "variables": ["argument"],
+    "title": "论证地图",
+    "content": "请把以下论证转换成结构化论证地图：主张、前提、证据、反方论证和再反驳，用嵌套列表返回。论证：{argument}",
+    "category": "思维与逻辑",
+    "tags": [
+      "论证",
+      "映射",
+      "逻辑"
+    ],
+    "variables": [
+      "argument"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null
   },
   {
-    "title": "Evidence Strength Rating",
-    "content": "Given these claims {claims}, rate the strength of evidence (high/medium/low) and explain why. Suggest the single best study or data that would most change the rating.",
-    "category": "Evidence & Evaluation",
-    "tags": ["evidence", "evaluation", "research"],
-    "variables": ["claims"],
+    "title": "证据强度评级",
+    "content": "给定以下论断{claims}，请评级证据强度（高/中/低）并说明理由，并指出最能改变评级的一项研究或数据。",
+    "category": "分析与研究",
+    "tags": [
+      "证据",
+      "评估",
+      "研究"
+    ],
+    "variables": [
+      "claims"
+    ],
     "isFavorite": false,
     "useCount": 0,
     "lastUsed": null

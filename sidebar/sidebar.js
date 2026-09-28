@@ -71,7 +71,7 @@ async function init() {
   // Seed the bundled curated prompt library on first run (no-op afterwards)
   seedDefaultLibraryOnce().then(result => {
     if (result.seeded > 0) {
-      showToast(`Imported ${result.seeded} starter prompts`);
+      showToast(t('msgStarterPromptsImported', [String(result.seeded)]));
     }
   });
 

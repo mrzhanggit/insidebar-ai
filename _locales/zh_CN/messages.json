@@ -1,4 +1,7 @@
 {
+  "msgStarterPromptsImported": {
+    "message": "已导入 $1 条内置提示词"
+  },
   "tooltipToggleWorkspace": {
     "message": "收起 / 展开编辑区"
   },

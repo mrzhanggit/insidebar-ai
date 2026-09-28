@@ -1,4 +1,7 @@
 {
+  "msgStarterPromptsImported": {
+    "message": "Imported $1 starter prompts"
+  },
   "tooltipToggleWorkspace": {
     "message": "Collapse / expand editing area"
   },
