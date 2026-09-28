@@ -1,4 +1,7 @@
 {
+  "tooltipToggleWorkspace": {
+    "message": "收合 / 展開編輯區"
+  },
   "extensionName": {
     "message": "insidebar.ai"
   },

@@ -430,6 +430,38 @@ body {
   margin: 0;
 }
 
+/* Collapse/expand toggle for the editing workspace */
+#workspace-collapse-btn {
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+#workspace-collapse-btn:hover {
+  background: #ececec;
+  color: #333;
+}
+
+#workspace-collapse-icon {
+  transition: transform 0.2s ease;
+}
+
+/* Collapsed state: hide the whole workspace block so the prompt list gets the room */
+body.workspace-collapsed #prompt-workspace {
+  display: none !important;
+}
+
+body.workspace-collapsed #workspace-collapse-icon {
+  transform: rotate(180deg);
+}
+
 /* Workspace for editing received text */
 #prompt-workspace {
   background: #f9f9f9;
@@ -910,6 +942,15 @@ body {
 }
 
 [data-theme="dark"] #workspace-header h2 {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] #workspace-collapse-btn {
+  color: #aaa;
+}
+
+[data-theme="dark"] #workspace-collapse-btn:hover {
+  background: #3a3a3a;
   color: #e0e0e0;
 }
 

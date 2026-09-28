@@ -1,4 +1,7 @@
 {
+  "tooltipToggleWorkspace": {
+    "message": "收起 / 展开编辑区"
+  },
   "extensionName": {
     "message": "insidebar.ai"
   },

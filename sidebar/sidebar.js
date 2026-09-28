@@ -682,6 +682,13 @@ function setupPromptLibrary() {
   document.getElementById('workspace-save-btn').addEventListener('click', saveWorkspaceAsPrompt);
   document.getElementById('workspace-clear-btn').addEventListener('click', clearWorkspace);
 
+  // Collapse/expand the editing workspace to make room for the prompt list
+  const workspaceCollapseBtn = document.getElementById('workspace-collapse-btn');
+  workspaceCollapseBtn.addEventListener('click', () => {
+    setWorkspaceCollapsed(!document.body.classList.contains('workspace-collapsed'));
+  });
+  applySavedWorkspaceCollapse();
+
   // Workspace provider selector
   const workspaceProviderBtn = document.getElementById('workspace-provider-btn');
   const workspaceProviderPopup = document.getElementById('workspace-provider-popup');
@@ -1111,6 +1118,11 @@ async function insertPromptToWorkspace(position) {
 
   if (!prompt) return;
 
+  // Expand the workspace if it is collapsed so the inserted prompt is visible
+  if (document.body.classList.contains('workspace-collapsed')) {
+    setWorkspaceCollapsed(false);
+  }
+
   const textarea = document.getElementById('prompt-workspace-text');
   const currentText = textarea.value.trim();
   const promptContent = prompt.content.trim();
@@ -1409,10 +1421,42 @@ async function updateWorkspaceProviderSelector() {
   `).join('');
 }
 
+const WORKSPACE_COLLAPSE_KEY = 'insidebarWorkspaceCollapsed';
+
+function setWorkspaceCollapsed(collapsed, persist = true) {
+  document.body.classList.toggle('workspace-collapsed', collapsed);
+  const btn = document.getElementById('workspace-collapse-btn');
+  if (btn) {
+    btn.title = t('tooltipToggleWorkspace');
+  }
+  if (persist) {
+    try {
+      localStorage.setItem(WORKSPACE_COLLAPSE_KEY, collapsed ? '1' : '0');
+    } catch (error) {
+      // localStorage unavailable - state just won't persist
+    }
+  }
+}
+
+function applySavedWorkspaceCollapse() {
+  try {
+    if (localStorage.getItem(WORKSPACE_COLLAPSE_KEY) === '1') {
+      setWorkspaceCollapsed(true, false);
+    }
+  } catch (error) {
+    // ignore
+  }
+}
+
 function showWorkspaceWithText(text) {
   const textarea = document.getElementById('prompt-workspace-text');
 
   if (!textarea) return;
+
+  // If text arrives while the workspace is collapsed, expand it so it is not missed
+  if (document.body.classList.contains('workspace-collapsed')) {
+    setWorkspaceCollapsed(false);
+  }
 
   textarea.value = text;
 

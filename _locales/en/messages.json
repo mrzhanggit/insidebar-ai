@@ -1,4 +1,7 @@
 {
+  "tooltipToggleWorkspace": {
+    "message": "Collapse / expand editing area"
+  },
   "extensionName": {
     "message": "insidebar.ai"
   },
