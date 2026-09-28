@@ -471,5 +471,41 @@ export async function importDefaultLibrary(libraryData) {
   return results;
 }
 
+// Seed the bundled curated prompt library (data/prompt-libraries/default-prompts.json)
+// exactly once per browser profile. Uses title-based dedup so user prompts are never
+// overwritten; prompts the user deletes after seeding are respected (flag prevents re-seed).
+const DEFAULT_LIBRARY_PATH = 'data/prompt-libraries/default-prompts.json';
+const DEFAULT_LIBRARY_FLAG = 'defaultPromptsLibrarySeeded';
+
+export async function seedDefaultLibraryOnce() {
+  try {
+    const flag = await chrome.storage.local.get(DEFAULT_LIBRARY_FLAG);
+    if (flag[DEFAULT_LIBRARY_FLAG]) {
+      return { seeded: 0, skipped: 0, alreadyDone: true };
+    }
+
+    const url = chrome.runtime.getURL(DEFAULT_LIBRARY_PATH);
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Failed to load default library: ${response.status}`);
+    }
+    const prompts = await response.json();
+    if (!Array.isArray(prompts) || prompts.length === 0) {
+      throw new Error('Default library is empty');
+    }
+
+    const results = await importDefaultLibrary({ prompts });
+    await chrome.storage.local.set({ [DEFAULT_LIBRARY_FLAG]: true });
+
+    if (results.errors && results.errors.length > 0) {
+      console.warn('Default library import had errors:', results.errors);
+    }
+    return { seeded: results.imported, skipped: results.skipped, alreadyDone: false };
+  } catch (error) {
+    console.error('Failed to seed default prompt library:', error);
+    return { seeded: 0, skipped: 0, error: error.message };
+  }
+}
+
 // Initialize DB on module load
 initPromptDB().catch(console.error);

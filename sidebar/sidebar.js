@@ -13,7 +13,8 @@ import {
   recordPromptUsage,
   getAllCategories,
   getRecentlyUsedPrompts,
-  getTopFavorites
+  getTopFavorites,
+  seedDefaultLibraryOnce
 } from '../modules/prompt-manager.js';
 import {
   saveConversation,
@@ -66,6 +67,13 @@ async function init() {
   setupMessageListener();
   setupPromptLibrary();  // T045: Initialize prompt library
   setupChatHistory();     // Initialize chat history
+
+  // Seed the bundled curated prompt library on first run (no-op afterwards)
+  seedDefaultLibraryOnce().then(result => {
+    if (result.seeded > 0) {
+      showToast(`Imported ${result.seeded} starter prompts`);
+    }
+  });
 
   // Re-render tabs when theme changes
   setupThemeChangeListener();
